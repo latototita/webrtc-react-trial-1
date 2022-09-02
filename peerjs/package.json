@@ -9,7 +9,8 @@
     "build": "tsc",
     "watch": "tsc -w",
     "prestart": "yarn build",
-    "start": "nodemon .",
+    "start": "node .",
+    "postinstall":"tsc",
     "dev": "concurrently --kill-others \"yarn watch\" \"yarn start\""
   },
   "dependencies": {
